@@ -3,6 +3,7 @@ layout: clean
 ---
 
 <section class="post" id="main">
+	<h2 class="post-title">{{page.title}}</h2>
 	<div class="post-info">
     	<span>Written by</span>
 		{% if page.author %}
@@ -16,10 +17,8 @@ layout: clean
     		<span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
     	{% endif %}
 	</div>
+	<div class="post-line"></div>
 	<div class="post-content">
-		<h2 class="post-title">{{page.title}}</h2>
-		<div class="post-line"></div>
-
   		{{ content }}
 	</div>
 </section>

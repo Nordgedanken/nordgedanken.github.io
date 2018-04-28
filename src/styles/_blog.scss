@@ -6,6 +6,10 @@
 	padding: 3rem 0;
 }
 
+.post-title {
+	text-align: center;
+}
+
 .post-info {
     letter-spacing: 0.5px;
     text-align: center;
@@ -17,4 +21,11 @@
 
 .post-content {
     margin: 1em 1em;
+}
+
+.post-line {
+    border-top: 0.4rem solid #353535;
+    display: block;
+    margin: 0 auto 3rem;
+    width: 4rem;
 }
