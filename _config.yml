@@ -21,5 +21,4 @@ exclude: ['package.json', 'src' , 'node_modules', 'yarn.lock']
 
 collections:
 - projects:
-  output: false
-  permalink: /:collection/:name
+    permalink: /:collection/:name
