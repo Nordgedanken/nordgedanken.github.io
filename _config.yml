@@ -6,7 +6,7 @@ description: A small portfolio
 
 # User settings
 username: Nordgedanken
-user_description: Production foused FOSS coded by MTRNord
+user_description: Production focused FOSS coded by MTRNord
 user_title: Free OpenSource Software
 email: info@nordgedanken.de
 twitter_username: mtrnord
@@ -20,5 +20,6 @@ google-analytics:
 exclude: ['package.json', 'src' , 'node_modules', 'yarn.lock']
 
 collections:
-- projects:
+  projects:
+    output: false
     permalink: /:collection/:name
