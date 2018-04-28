@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
-  <body>
-      {% include header.html %}
-      <section class="about" id="main">
-        {% include about.html %}
-      </section>
-      <section id="projects">
-        {% include projects.html %}
-      </section>
+    {% include head.html %}
+        <body>
+            {% include header.html %}
+            <section class="about" id="main">
+                {% include about.html %}
+            </section>
+            <section id="projects">
+                {% for item in site.projects %}
+                {% if item.image_side == "right" %}
+                    <div class="user-projects">
+                        <div class="images-right">
+                            <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+                        </div>
+                        <div class="contents">
+                            <h3>{{item.title}}</h3>
+                            <ul>
+                                <li>Featured Skills</li>
+                            </ul>
+                            {{item.content}}
+                            <a class="project-link" href="{{item.project_link}}">Check it out</a>
+                        </div>
+                    </div>
+                {% elsif item.image_side == "left" %}
+                    <div class="user-projects">
+                        <div class="images-left">
+                            <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+                        </div>
+                        <div class="contents-right">
+                            <h3>{{item.title}}</h3>
+                            <ul>
+                                <li>Featured Skills</li>
+                            </ul>
+                            {{item.content}}
+                            <a class="project-link" href="{{item.project_link}}">Check it out</a>
+                        </div>
+                    </div>
+                {% endif %}
+                {% endfor %}
+            </section>
         {{ content }}
-      {% include footer.html %}
-  </body>
+        {% include footer.html %}
+    </body>

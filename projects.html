@@ -1,0 +1,40 @@
+---
+layout: clean
+---
+
+<section class="projects" id="main">
+  <h2>Projects</h2>
+  
+
+    {% for item in site.projects %}
+        {% if page.image_side == "right" %}
+        <div class="user-projects">
+            <div class="images-right">
+                <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+            </div>
+            <div class="contents">
+                <h3>{{page.title}}</h3>
+                <ul>
+                    <li>Featured Skills</li>
+                </ul>
+                {{content}}
+                <a class="project-link" href="{{project_link}}">Check it out</a>
+            </div>
+        </div>
+        {% elsif page.image_side == "left" %}
+        <div class="user-projects">
+            <div class="images-left">
+                <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+            </div>
+            <div class="contents-right">
+                <h3>{{page.title}}</h3>
+                <ul>
+                    <li>Featured Skills</li>
+                </ul>
+                {{content}}
+                <a class="project-link" href="{{project_link}}">Check it out</a>
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+</section>

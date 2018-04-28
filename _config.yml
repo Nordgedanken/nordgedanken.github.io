@@ -17,4 +17,9 @@ github_username:  Nordgedanken
 google-analytics:
   id: ""
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ['package.json', 'src' , 'node_modules', 'yarn.lock']
+
+collections:
+- projects:
+  output: false
+  permalink: /:collection/:name
