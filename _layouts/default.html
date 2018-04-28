@@ -11,12 +11,14 @@
                 {% if item.image_side == "right" %}
                     <div class="user-projects">
                         <div class="images-right">
-                            <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+                            <img src="{{ item.image | prepend: site.baseurl }}" />
                         </div>
                         <div class="contents">
                             <h3>{{item.title}}</h3>
                             <ul>
-                                <li>Featured Skills</li>
+                                {% for feature in item.features %}
+                                    <li>{{feature}}</li>
+                                {% endfor %}
                             </ul>
                             {{item.content}}
                             <a class="project-link" href="{{item.project_link}}">Check it out</a>
@@ -25,7 +27,7 @@
                 {% elsif item.image_side == "left" %}
                     <div class="user-projects">
                         <div class="images-left">
-                            <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+                            <img src="{{ item.image | prepend: site.baseurl }}" />
                         </div>
                         <div class="contents-right">
                             <h3>{{item.title}}</h3>
