@@ -8,7 +8,7 @@ layout: clean
 		{% if page.author %}
     		{{ page.author }}
 		{% else %}
-        	{{ site.author.name }}
+        	{{ site.username }}
     	{% endif %}
 
     	{% if page.date %}
@@ -17,7 +17,7 @@ layout: clean
     	{% endif %}
 	</div>
 	
-	<h2 class="post-title">{{post.title}}</h2>
+	<h2 class="post-title">{{page.title}}</h2>
 	<div class="post-line"></div>
 
   	{{ content }}
