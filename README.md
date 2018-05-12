@@ -1,4 +1,6 @@
 # Particle Jekyll Theme
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FNordgedanken%2Fnordgedanken.github.io.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FNordgedanken%2Fnordgedanken.github.io?ref=badge_shield)
+
 
 ![](./particle.jpg)
 
@@ -66,6 +68,9 @@ Having any issues file a [GitHub Issue](https://github.com/nrandecker/particle/i
 ## License
 
 This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FNordgedanken%2Fnordgedanken.github.io.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FNordgedanken%2Fnordgedanken.github.io?ref=badge_large)
 
 ## Credits
 
